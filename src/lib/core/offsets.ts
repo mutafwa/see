@@ -1,17 +1,17 @@
 export const offsets = {
   button: {
-    inSpeed: 0x0766a900,               // [Buttons]                        -> in_speed
-    inAttack: 0x0766a958               // [Buttons]                        -> in_attack
+    inSpeed: 0x07678090,               // [Buttons]                        -> in_speed
+    inAttack: 0x076780e8               // [Buttons]                        -> in_attack
   },
   core: {
-    levelName: BigInt(0x144df40),     // [Miscellaneous]                  -> LevelName
-    clEntityList: BigInt(0x1b2e708),  // [Miscellaneous]                  -> cl_entitylist
-    localPlayer: BigInt(0x01edf800 + 0x8)    // [Miscellaneous]                  -> LocalPlayer or .?AVC_GameMovement@@
+    levelName: BigInt(0x1462460),     // [Miscellaneous]                  -> LevelName
+    clEntityList: BigInt(0x1b37938),  // [Miscellaneous]                  -> cl_entitylist
+    localPlayer: BigInt(0x01ee8b70 + 0x8)    // [Miscellaneous]                  -> LocalPlayer or .?AVC_GameMovement@@
   },
   entity: {
     localOrigin: 0x0158,               // [DataMap.CBaseViewModel]         -> m_localOrigin
     iSignifierName: 0x0580,            // [RecvTable.DT_BaseEntity]        -> m_iSignifierName
-    lastVisibleTime: 0x1a70           // [Miscellaneous]                  -> CPlayer!lastVisibleTime
+    lastVisibleTime: 0x1a78           // [Miscellaneous]                  -> CPlayer!lastVisibleTime
   },
   item: {
     highlightFunctionBits: 0x02c0,     // [RecvTable.DT_HighlightSettings] -> m_highlightFunctionBits
@@ -23,8 +23,8 @@ export const offsets = {
     iTeamNum: 0x044c,                  // [RecvTable.DT_BaseEntity]        -> m_iTeamNum
     iName: 0x0589,                     // [RecvTable.DT_BaseEntity]        -> m_iName
     lifeState: 0x0798,                 // [RecvTable.DT_Player]            -> m_lifeState
-    vecPunchWeaponAngle: 0x24a8,      // [DataMap.C_Player]               -> m_currentFrameLocalPlayer.m_vecPunchWeapon_Angle
-    viewAngle: 0x25a4 - 0x14,         // [DataMap.C_Player]               -> m_ammoPoolCapacity - 0x14
-    bleedoutState: 0x2738             // [RecvTable.DT_Player]            -> m_bleedoutState
+    vecPunchWeaponAngle: 0x24b0,      // [DataMap.C_Player]               -> m_currentFrameLocalPlayer.m_vecPunchWeapon_Angle
+    viewAngle: 0x25ac - 0x14,         // [DataMap.C_Player]               -> m_ammoPoolCapacity - 0x14
+    bleedoutState: 0x2740             // [RecvTable.DT_Player]            -> m_bleedoutState
   }
 };
